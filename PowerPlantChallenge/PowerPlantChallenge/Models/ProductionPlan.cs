@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-
-using System.Globalization;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
+﻿using Newtonsoft.Json;
 
 namespace PowerPlantChallenge.Models
 {
     public partial class ProductionPlan
     {
+        public ProductionPlan (string name , long price)
+        {
+            Name = name;
+            P = price;
+        }
         [JsonProperty("name")]
         public string Name { get; set; }
 
