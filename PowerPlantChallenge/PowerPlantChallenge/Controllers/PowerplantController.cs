@@ -26,12 +26,12 @@ namespace PowerPlantChallenge.Controllers
         {
             try
             {
-                logger.LogInformation($"{0} Starting processing the request...", DateTime.UtcNow.ToLongDateString());
+                logger.LogInformation("Starting processing the request...");
                 return productionPlanService.CalculateUnitCommitment(payload);
             }
             catch(Exception ex)
             {
-                logger.LogError($"{0} Error - {1}", DateTime.UtcNow.ToLongDateString(),  ex);
+                logger.LogError($"{ex}");
                 return new List<ProductionPlan>();
             }
            
