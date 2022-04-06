@@ -1,4 +1,4 @@
-﻿using PowerPlantChallenge.Models;
+﻿using PowerPlantChallenge.Data.Models;
 using System.Collections.Generic;
 
 namespace PowerPlantChallenge.Business

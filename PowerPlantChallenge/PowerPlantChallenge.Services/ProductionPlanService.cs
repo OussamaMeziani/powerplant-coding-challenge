@@ -1,6 +1,4 @@
-﻿using PowerPlantChallenge.Models;
-using PowerPlantChallenge.Models.Enum;
-using System;
+﻿using PowerPlantChallenge.Data.Models;
 using System.Collections.Generic;
 
 namespace PowerPlantChallenge.Business

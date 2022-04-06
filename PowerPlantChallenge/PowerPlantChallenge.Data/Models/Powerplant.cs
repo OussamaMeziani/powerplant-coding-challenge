@@ -1,6 +1,6 @@
-﻿using PowerPlantChallenge.Models.Enum;
+﻿using PowerPlantChallenge.Data.Models.Enum;
 
-namespace PowerPlantChallenge.Models
+namespace PowerPlantChallenge.Data.Models
 {
     public class Powerplant
     {

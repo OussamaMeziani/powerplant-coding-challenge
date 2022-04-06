@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace PowerPlantChallenge.Models
+namespace PowerPlantChallenge.Data.Models
 {
     public partial class ProductionPlan
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PowerPlantChallenge.Models
+namespace PowerPlantChallenge.Data.Models
 {
     public class Payload
     {

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace PowerPlantChallenge.Models
+namespace PowerPlantChallenge.Data.Models
 {
     public class Fuels
     {

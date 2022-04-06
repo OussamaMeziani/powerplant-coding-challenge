@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PowerPlantChallenge.Models.Enum
+﻿namespace PowerPlantChallenge.Data.Models.Enum
 {
     public enum FuelType
     {
