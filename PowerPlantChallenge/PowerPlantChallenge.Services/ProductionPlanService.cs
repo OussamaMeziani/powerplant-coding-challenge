@@ -1,7 +1,8 @@
 ﻿using PowerPlantChallenge.Data.Models;
+using PowerPlantChallenge.Data.Models.Enum;
 using System.Collections.Generic;
 
-namespace PowerPlantChallenge.Business
+namespace PowerPlantChallenge.Services
 {
     public class ProductionPlanService : IProductionPlanService
     {
@@ -12,21 +13,19 @@ namespace PowerPlantChallenge.Business
             List<Powerplant> powerplants = payload.Powerplants;
             List<ProductionPlan> productionPlans = new List<ProductionPlan>();
 
-            foreach(var powerplant in powerplants)
+            foreach (var powerplant in powerplants)
             {
-                productionPlans.Add(new ProductionPlan(powerplant.Name, powerplant.Pmax/3));
+                productionPlans.Add(new ProductionPlan(powerplant.Name, powerplant.Pmax / 3));
             }
-
-            //I didn't understand how to make the algoithm 
-            //foreach(var powerplant in powerplants.OrderBy())
+            //foreach (var powerplant in powerplants)
             //{
-            //    if(load > 0)
+            //    if (load > 0)
             //    {
-            //        switch(powerplant.GetPowerplanFuelType())
+            //        switch (powerplant.GetPowerplanFuelType())
             //        {
             //            case FuelType.Gas:
 
-            //                break ;
+            //                break;
 
             //            case FuelType.Kerosine:
             //                break;

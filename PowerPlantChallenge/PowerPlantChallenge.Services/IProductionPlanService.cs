@@ -1,7 +1,7 @@
 ﻿using PowerPlantChallenge.Data.Models;
 using System.Collections.Generic;
 
-namespace PowerPlantChallenge.Business
+namespace PowerPlantChallenge.Services
 {
     public interface IProductionPlanService
     {
