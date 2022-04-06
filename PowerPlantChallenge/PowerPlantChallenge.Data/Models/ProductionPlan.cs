@@ -2,12 +2,12 @@
 {
     public partial class ProductionPlan
     {
-        public ProductionPlan (string name , long price)
+        public ProductionPlan (string name , decimal power)
         {
             Name = name;
-            P = price;
+            P = power;
         }
         public string Name { get; set; }
-        public long P { get; set; }
+        public decimal P { get; set; }
     }
 }

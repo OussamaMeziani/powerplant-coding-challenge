@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PowerPlantChallenge.Data.Models;
@@ -22,17 +23,24 @@ namespace PowerPlantChallenge.Controllers
         }
 
         [HttpPost]
-        public List<ProductionPlan> Productionplan([FromBody] Payload payload)
+        public IActionResult Productionplan([FromBody] Payload payload)
         {
             try
             {
                 logger.LogInformation("Starting processing the request...");
-                return productionPlanService.CalculateUnitCommitment(payload);
+                List<ProductionPlan> productionplans = productionPlanService.CalculateUnitCommitment(payload);
+                if (productionplans.Any())
+                {
+                    logger.LogInformation("Finished processing the request !");
+                    return Ok(productionplans);
+                }
+                else
+                    throw new Exception("Couldn't calculate the amount of energy");
             }
             catch(Exception ex)
             {
                 logger.LogError($"{ex}");
-                return new List<ProductionPlan>();
+                return Problem();
             }
            
         }
