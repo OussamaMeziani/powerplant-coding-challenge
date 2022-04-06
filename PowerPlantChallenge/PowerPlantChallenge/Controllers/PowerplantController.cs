@@ -31,7 +31,7 @@ namespace PowerPlantChallenge.Controllers
             }
             catch(Exception ex)
             {
-                logger.LogError($"{0} Error - {1}", DateTime.UtcNow, ex);
+                logger.LogError($"{0} Error - {1}", DateTime.UtcNow.ToLongDateString(),  ex);
                 return new List<ProductionPlan>();
             }
            

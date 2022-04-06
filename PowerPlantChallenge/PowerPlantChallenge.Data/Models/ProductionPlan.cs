@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace PowerPlantChallenge.Data.Models
+﻿namespace PowerPlantChallenge.Data.Models
 {
     public partial class ProductionPlan
     {
@@ -9,10 +7,7 @@ namespace PowerPlantChallenge.Data.Models
             Name = name;
             P = price;
         }
-        [JsonProperty("name")]
         public string Name { get; set; }
-
-        [JsonProperty("p")]
         public long P { get; set; }
     }
 }
