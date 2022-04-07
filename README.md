@@ -15,6 +15,4 @@ The application was developed using Visual Studio 2019 and .NET 5 for the API.
    - You can verify the result with postman.
 
 ### Aspects not implemented
- - Couldn't find the correct algorithm
- - logging
  - optional challenges
